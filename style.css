@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(72.3deg, rgb(29, 7, 64) 8.5%, rgb(253, 105, 139) 92.2%);
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+#flex-container{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    padding: 60px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#todo-list-container{
+    display: flex;
+    justify-content: flex-start;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    padding: 40px;
+    width: 345px;
+    border-radius: 30px;
+    max-height: 300px;
+}
+
+div::-webkit-scrollbar{
+    display: none;
+}
+
+.todo-list-item{
+    list-style: none;
+    font-size: 17px;
+    text-transform: capitalize;
+    color: white;
+}
+
+#icon{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border-radius: 20px;
+}
+
+#list-item-container{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 15px 0;
+    letter-spacing: 2px;
+    width: 44vh;
+    height: 68px;
+    border-radius: 23px;
+}
+
+#todo-input{
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    width: 195px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#todo-btn{
+    height: 48px;
+    border-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 30px;
+    background-color: rgb(213, 213, 213);
+    border: none;
+    color: black;
+    font-size: 15px;
+    transition: 0.2s ease;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#trash-btn{
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#trash-btn:hover{
+    color: red;
+}
+
+
+#check-btn{
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#icons .active{
+    color: green;
+}
+
+#check-btn:hover{
+    opacity: 0.8;
+}
+
+
+#todo-btn:hover{
+    opacity: 0.8;
+}
+
+.completed{
+    text-decoration:line-through;
+    color: black;
+
+}
